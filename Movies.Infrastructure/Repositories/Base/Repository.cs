@@ -11,7 +11,7 @@ namespace Movies.Infrastructure.Repositories.Base
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly MovieContext _movieContext;
+        protected readonly MovieContext _movieContext;
 
         public Repository(MovieContext movieContext)
         {
