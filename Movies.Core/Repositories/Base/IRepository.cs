@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Movies.Core.Repositories.Base
 {
-    public interface IRepository<T> where T : Entity
+    public interface IRepository<T> where T : class
     {
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
